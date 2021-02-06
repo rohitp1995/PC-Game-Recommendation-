@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Game Recommender </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    h1 {
+      font-style: italic;
+      font-weight: bolder;
+      font-size: xx-large;
+      color: whitesmoke;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    li {
+      font-weight: bolder;
+      font-size: xx-large;
+      color: greenyellow;
+    }
+
+    button {
+      width: 150px;
+      padding: 10px;
+      border-radius: 15px;
+      background-color:khaki;
+      margin-left: 80px;
+    }
+
+    body {
+      background: rgba(0, 0, 0, 0.9) url("https://quastmaron-35.webself.net/file/si521965/landscape-1481544497-best-xbox-one-games-collage-fi8077801x960.jpg");
+      background-blend-mode: darken;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .game{
+      margin-left: 30%;
+      margin-top: 15%;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="game">
+      <h1>The following games are recommended for you</h1>
+      <ul>
+        <li>{{ game_names[1] }}</li>
+        <li>{{ game_names[2] }}</li>
+        <li>{{ game_names[3] }}</li>
+        <li>{{ game_names[4] }}</li>
+		<li>{{ game_names[5] }}</li>
+      </ul>
+      <br>
+      <div>
+        <button onClick="back()">BACK</button>
+      </div>
+  </div>
+  <script>
+    function back() {
+      window.history.back();
+    }
+  </script>
+
+
+</body>
+
+</html>
