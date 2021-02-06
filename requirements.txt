@@ -27,6 +27,7 @@ entrypoints==0.3
 flake8==3.8.4
 flasgger==0.9.5
 Flask==1.1.2
+gunicorn==20.0.4
 helpdev==0.7.1
 idna==2.10
 imagesize==1.2.0
