@@ -21,7 +21,7 @@ def get_recommendation(title,n):
     return names
 
 
-game_info=pd.read_csv('metacritic_game_info.csv')
+game_info=pd.read_csv("./DATA/metacritic_game_info.csv")
 game_0= pd.read_csv("./DATA/game_0.csv")
 game_1= pd.read_csv("./DATA/game_1.csv")
 game_2= pd.read_csv("./DATA/game_2.csv")
@@ -34,9 +34,9 @@ game_8= pd.read_csv("./DATA/game_8.csv")
 game_9= pd.read_csv("./DATA/game_9.csv")
 game_10= pd.read_csv("./DATA/game_10.csv")
 game_11= pd.read_csv("./DATA/game_11.csv")
-game_comm=pd.concat(['game_0','game_1','game_2','game_3','game_4','game_5','game_6','game_7','game_8','game_9','game_10','game_11'],0)
+game_comm=pd.concat([game_0,game_1,game_2,game_3,game_4,game_5,game_6,game_7,game_8,game_9,game_10,game_11],0)
 game_info=game_info.iloc[:,1:]
-game_comm=game_comm.iloc[:,1:]
+game_comm=game_comm.iloc[:,2:]
 df=game_comm.merge(game_info,on='Title')
 df=df.dropna()
 df=df[['Title','Username','Metascore','Userscore']]
