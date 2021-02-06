@@ -34,6 +34,7 @@ imagesize==1.2.0
 importlib-metadata==3.4.0
 intervaltree==3.1.0
 ipykernel==5.4.3
+ipython==7.20.0
 ipython-genutils==0.2.0
 ipywidgets==7.6.3
 isort==5.7.0
