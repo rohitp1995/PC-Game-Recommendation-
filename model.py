@@ -22,9 +22,9 @@ def get_recommendation(title,n):
 
 
 game_info=pd.read_csv("./DATA/metacritic_game_info.csv")
-game_0= pd.read_csv(r"D:\DATA\game_0.csv")
-game_1= pd.read_csv(r"D:\DATA\game_1.csv")
-game_2= pd.read_csv(r"D:\DATA\game_2.csv")
+game_0= pd.read_csv("./DATA/game_0.csv")
+game_1= pd.read_csv("./DATA/game_1.csv")
+game_2= pd.read_csv("./DATA/game_2.csv")
 game_3= pd.read_csv("./DATA/game_3.csv")
 game_4= pd.read_csv("./DATA/game_4.csv")
 game_5= pd.read_csv("./DATA/game_5.csv")
